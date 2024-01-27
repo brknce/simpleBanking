@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.eteration.simplebanking.ControllerTests" tests="4" skipped="0" failures="0" errors="0" timestamp="2024-01-27T12:03:37" hostname="192.168.1.76" time="0.014">
+  <properties/>
+  <testcase name="givenId_CreditAndThenDebit_thenReturnJson()" classname="com.eteration.simplebanking.ControllerTests" time="0.007"/>
+  <testcase name="givenId_Credit_thenReturnJson()" classname="com.eteration.simplebanking.ControllerTests" time="0.001"/>
+  <testcase name="givenId_CreditAndThenDebitMoreGetException_thenReturnJson()" classname="com.eteration.simplebanking.ControllerTests" time="0.002"/>
+  <testcase name="givenId_GetAccount_thenReturnJson()" classname="com.eteration.simplebanking.ControllerTests" time="0.001"/>
+  <system-out><![CDATA[2024-01-27 15:03:36.885  INFO 10269 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.eteration.simplebanking.ControllerTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-01-27 15:03:36.885  INFO 10269 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.eteration.simplebanking.ControllerTests]: ControllerTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-01-27 15:03:36.887  INFO 10269 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.eteration.simplebanking.DemoApplication for test class com.eteration.simplebanking.ControllerTests
+2024-01-27 15:03:36.889  INFO 10269 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-01-27 15:03:36.889  INFO 10269 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@63846fa4, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@206b959c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@74026b18, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cc81ea1, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5cf1bbd3, org.springframework.test.context.support.DirtiesContextTestExecutionListener@204a02a4, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4777f71e, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1b96d447, org.springframework.test.context.event.EventPublishingTestExecutionListener@4a68cbc5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@3a47bf0e, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@4270705f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@6f69b0ba, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@63537871, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@64eb14da, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@25587290]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.5.6)
+
+2024-01-27 15:03:36.904  INFO 10269 --- [    Test worker] c.e.simplebanking.ControllerTests        : Starting ControllerTests using Java 17.0.8.1 on 192.168.1.76 with PID 10269 (started by burakince in /Users/burakince/Desktop/simplebanking)
+2024-01-27 15:03:36.905  INFO 10269 --- [    Test worker] c.e.simplebanking.ControllerTests        : No active profile set, falling back to default profiles: default
+2024-01-27 15:03:37.020  INFO 10269 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-27 15:03:37.024  INFO 10269 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 3 ms. Found 1 JPA repository interfaces.
+2024-01-27 15:03:37.192  INFO 10269 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-27 15:03:37.195  INFO 10269 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-27 15:03:37.203  INFO 10269 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-27 15:03:37.206  INFO 10269 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2024-01-27 15:03:37.235  INFO 10269 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-01-27 15:03:37.235  INFO 10269 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-01-27 15:03:37.358  WARN 10269 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-27 15:03:37.593  INFO 10269 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-01-27 15:03:37.593  INFO 10269 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-01-27 15:03:37.593  INFO 10269 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 0 ms
+2024-01-27 15:03:37.601  INFO 10269 --- [    Test worker] c.e.simplebanking.ControllerTests        : Started ControllerTests in 0.708 seconds (JVM running for 3.096)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
